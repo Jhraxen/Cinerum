@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Aplicacio</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="inserta_el_titulo">Inserta el titulo</string>
+    <string name="inserta_el_director">Inserta el director</string>
+    <string name="guardar">Guardar</string>
+    <string name="home">Home</string>
+    <string name="list">List</string>
+    <string name="form">Form</string>
+    <string name="titulo">Name</string>
+    <string name="director">Name</string>
+    <string name="listaTitulo">Titulo</string>
+    <string name="listaDirector">Director</string>
+    <string name="todo">TODO</string>
+    <string name="image_url">Image URL</string>
+    <string name="borrarBDD"> Borrar BDD</string>
+    <string name="Menu_principal"> Menu Principal </string>
+    <string name="Username"> Usuari </string>
+    <string name="password"> Contrasenya </string>
+    <string name="signin"> Signin </string>
+</resources>

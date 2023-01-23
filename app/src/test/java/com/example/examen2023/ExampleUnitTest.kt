@@ -1,4 +1,4 @@
-package com.example.aplicacio
+package com.example.examen2023
 
 import org.junit.Test
 

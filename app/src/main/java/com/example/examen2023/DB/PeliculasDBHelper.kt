@@ -1,16 +1,16 @@
-package com.example.aplicacio.DB
+package com.example.examen2023.DB
 import android.annotation.SuppressLint
 import android.content.ContentValues
 import android.content.Context
 import android.database.Cursor
 import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
-import com.example.aplicacio.DB.PeliculasContract.COLUMN_NAME_DIRECTOR
-import com.example.aplicacio.DB.PeliculasContract.COLUMN_NAME_IMAGE
-import com.example.aplicacio.DB.PeliculasContract.COLUMN_NAME_TITLE
-import com.example.aplicacio.DB.PeliculasContract.SQL_CREATE_ENTRIES
-import com.example.aplicacio.DB.PeliculasContract.SQL_DELETE_ENTRIES
-import com.example.aplicacio.DB.PeliculasContract.TABLE_NAME
+import com.example.examen2023.DB.PeliculasContract.COLUMN_NAME_DIRECTOR
+import com.example.examen2023.DB.PeliculasContract.COLUMN_NAME_NOM
+import com.example.examen2023.DB.PeliculasContract.COLUMN_NAME_TITLE
+import com.example.examen2023.DB.PeliculasContract.SQL_CREATE_ENTRIES
+import com.example.examen2023.DB.PeliculasContract.SQL_DELETE_ENTRIES
+import com.example.examen2023.DB.PeliculasContract.TABLE_NAME
 /*aquí tenemos la clase PeliculasDBHelper, que extiende de SQLiteOpenHelper*/
 class PeliculasDBHelper (context: Context) : SQLiteOpenHelper(context, DATABASE_NAME, null, DATABASE_VERSION) {
 
@@ -32,7 +32,7 @@ class PeliculasDBHelper (context: Context) : SQLiteOpenHelper(context, DATABASE_
    fun insertPelicula(p: Pelicula) {
 
         val values = ContentValues()
-        values.put(COLUMN_NAME_IMAGE, p.image)
+        values.put(COLUMN_NAME_NOM, p.image)
         values.put(COLUMN_NAME_TITLE, p.title)
         values.put(COLUMN_NAME_DIRECTOR, p.director)
         val db = writableDatabase
@@ -57,7 +57,7 @@ class PeliculasDBHelper (context: Context) : SQLiteOpenHelper(context, DATABASE_
             do {
                 //crides l'd .getInt(cursor.getColumn..("id")
                 val id = cursor.getInt(cursor.getColumnIndex(("id")));
-                val image = cursor.getString(cursor.getColumnIndex(COLUMN_NAME_IMAGE))
+                val image = cursor.getString(cursor.getColumnIndex(COLUMN_NAME_NOM))
                 val title = cursor.getString(cursor.getColumnIndex(COLUMN_NAME_TITLE))
                 val director = cursor.getString(cursor.getColumnIndex(COLUMN_NAME_DIRECTOR))
                 val pelicula = Pelicula(id,image, title, director)

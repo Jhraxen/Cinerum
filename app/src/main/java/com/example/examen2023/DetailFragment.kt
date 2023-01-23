@@ -1,4 +1,4 @@
-package com.example.aplicacio
+package com.example.examen2023
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,7 +7,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
-import com.example.aplicacio.DB.Pelicula
+import com.example.aplicacio.R
+import com.example.examen2023.DB.Pelicula
 import com.squareup.picasso.Picasso
 
 // TODO: Rename parameter arguments, choose names that match

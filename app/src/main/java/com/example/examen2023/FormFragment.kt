@@ -1,4 +1,4 @@
-package com.example.aplicacio
+package com.example.examen2023
 
 import android.app.AlertDialog
 import android.content.DialogInterface
@@ -10,8 +10,9 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 import androidx.fragment.app.Fragment
-import com.example.aplicacio.DB.Pelicula
-import com.example.aplicacio.DB.PeliculasDBHelper
+import com.example.aplicacio.R
+import com.example.examen2023.DB.Pelicula
+import com.example.examen2023.DB.PeliculasDBHelper
 
 
 /**

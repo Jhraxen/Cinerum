@@ -1,4 +1,4 @@
-package com.example.aplicacio.DB
+package com.example.examen2023.DB
 //la clase película con getters, setters y constructores
 class Pelicula {
 

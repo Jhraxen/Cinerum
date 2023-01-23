@@ -1,4 +1,4 @@
-package com.example.aplicacio
+package com.example.examen2023
 
 import android.annotation.SuppressLint
 import android.os.Bundle
@@ -8,7 +8,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.aplicacio.DB.PeliculasDBHelper
+import com.example.aplicacio.R
+import com.example.examen2023.DB.PeliculasDBHelper
 
 /**
  * A simple [Fragment] subclass.
